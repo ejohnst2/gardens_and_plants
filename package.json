@@ -1,5 +1,7 @@
 {
   "name": "gardens_and_plants",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "bootstrap": "^4.3.1"
+  }
 }
