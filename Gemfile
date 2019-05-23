@@ -29,6 +29,9 @@ gem 'turbolinks', '~> 5'
 
 gem 'simple_form'
 
+# adding webpack
+gem 'webpacker', '~> 4.x'
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 

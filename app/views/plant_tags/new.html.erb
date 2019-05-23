@@ -1,0 +1,8 @@
+<div class="container">
+  <h1>Create New Plant Tag</h1>
+
+  <%= simple_form_for [@plant, @plant_tag] do |f| %>
+    <%= f.input :tag, collection: Tag.all %>
+    <%= f.submit "Create Tag" %>
+  <% end %>
+</div>
