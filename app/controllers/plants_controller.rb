@@ -1,12 +1,13 @@
 class PlantsController < ApplicationController
   def create
+    @garden = Garden.find(params[:garden_id])
     @plant = Plant.new(plant_params)
-    @plant.garden = Garden.find(params[:garden_id])
+    @plant.garden = @garden
 
     if @plant.save
-      redirect_to garden_path(@plant.garden)
+      redirect_to garden_path(@garden)
     else
-      render :new
+      render "gardens/show"
     end
   end
 
